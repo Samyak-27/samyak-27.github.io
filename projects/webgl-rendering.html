@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive WebGL2 renderer with a scene graph, OBJ model loading, and per-fragment Phong lighting.">
+  <title>3D rendering engine | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article class="case-compact">
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#library">All projects</a>
+        <p class="eyebrow">Computer graphics</p>
+        <h1>3D rendering engine</h1>
+        <p>I built an interactive WebGL2 renderer that loads OBJ models, positions them in a scene, and shades their surfaces in the browser.</p>
+      </header>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Platform</dt>
+            <dd>JavaScript, WebGL2</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Model input</dt>
+            <dd>OBJ, vertex and normal buffers</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Lighting</dt>
+            <dd>Per-fragment Phong shading</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>Organizing the scene</h2>
+            <p>I built a scene graph to organize objects and their transformations, with camera controls to change the view. That let the renderer manage where objects sit in the scene independently of the viewer’s perspective.</p>
+          </section>
+          <section class="case-section">
+            <h2>Loading mesh geometry</h2>
+            <p>I wrote an OBJ parser and used the parsed geometry to prepare vertex and normal buffers for WebGL2. The positions describe the mesh, while the normals give its surfaces a direction for lighting calculations.</p>
+          </section>
+          <section class="case-section">
+            <h2>Shading the surfaces</h2>
+            <p>I implemented Phong lighting in the fragment shader so lighting could be evaluated across each visible surface during interactive rendering.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#library">All projects</a>
+      <a href="hvs-control-diagnostics.html" rel="next"><small>Next project</small> HVS control software diagnostics</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

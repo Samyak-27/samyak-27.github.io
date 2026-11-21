@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An internal service portal that gives laboratory staff one place to report equipment issues, assign work, and preserve repair records.">
+  <title>LabOps service portal | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article>
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#work">All projects</a>
+        <p class="eyebrow">Full-stack software</p>
+        <h1>LabOps service portal</h1>
+        <p>An internal service portal that gives laboratory staff one place to report equipment issues, assign work, and preserve repair records.</p>
+      </header>
+      <figure class="case-visual wrap">
+        <img src="../assets/work-labops.webp" alt="Illustration of a laboratory service dashboard with an interactive floor plan" width="1200" height="800" fetchpriority="high" decoding="async">
+        <figcaption>Project illustration</figcaption>
+      </figure>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Organization</dt>
+            <dd>UC Pavement Research Center</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Interface</dt>
+            <dd>React, TypeScript</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Backend</dt>
+            <dd>Supabase Auth, Cloudflare D1</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>The workflow</h2>
+            <p>A service request begins with enough context for someone else to act on it. In LabOps, staff can describe an issue, identify its location on a facility map, and attach relevant photos or documents. An assignee can track the request and record the repair or resolution.</p>
+          </section>
+          <section class="case-section">
+            <h2>What I built</h2>
+            <p>I developed the request, assignment, and repair workflows in React and TypeScript. Supabase Auth handles sign-in, and Cloudflare D1 stores the application records. I added map-based reporting and searchable histories so staff could find earlier requests and their resolutions.</p>
+          </section>
+          <section class="case-section">
+            <h2>How it evolved</h2>
+            <p>I iterated on the portal with feedback from research staff. The project grew from issue intake into a place to follow work through to completion and refer back to equipment service history.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#work">All projects</a>
+      <a href="equipment-inventory.html" rel="next"><small>Next project</small> Equipment inventory &amp; calibration</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131c">
+  <meta name="description" content="Samyak Shirbhate is a UC Davis computer science and engineering student and Lead Technician at UC Pavement Research Center. Explore his work in software, instrumentation, and research systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Samyak Shirbhate | Engineering Portfolio">
+  <meta property="og:description" content="Case studies in research software, instrumentation, and engineering systems.">
+  <title>Samyak Shirbhate | Engineering Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Samyak Shirbhate, home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#library">Project library</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span class="hero-rule"></span> Computer Science &amp; Engineering</p>
+        <h1 id="hero-title">Samyak<br>Shirbhate<span>.</span></h1>
+        <p class="hero-summary">I build research software and work on the systems behind pavement testing, from Heavy Vehicle Simulator instrumentation to lab data and equipment.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore my work</a>
+          <a class="button secondary" href="assets/Samyak-Shirbhate-Resume.pdf" download>Download résumé</a>
+        </div>
+        <p class="hero-location">UC Davis <span aria-hidden="true">·</span> Davis, California</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-research.webp" width="1440" height="960" alt="" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="wrap section work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading work-heading">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="work-title">Selected work</h2>
+          <a class="text-link work-samples-jump" href="#work-samples">Explore work samples</a>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="software" aria-pressed="false">Software</button>
+          <button type="button" data-filter="hardware" aria-pressed="false">Hardware</button>
+          <button type="button" data-filter="systems" aria-pressed="false">Systems</button>
+        </div>
+      </div>
+      <p class="sr-only" data-filter-status role="status"></p>
+      <div class="work-grid">
+        <article class="project featured-project" data-category="hardware systems">
+          <a class="project-link" href="projects/hvs.html">
+            <div class="project-image">
+              <img src="assets/work-hvs.webp" width="1185" height="890" loading="lazy" alt="">
+              <span class="image-credit">Virginia HVS reference photo</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Research instrumentation</span><span>UC Pavement Research Center</span></p>
+              <h3>Heavy Vehicle Simulator research systems</h3>
+              <p>Restored Windows and NI data-acquisition configurations supporting two simulators and diagnosed issues in legacy control software.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+        <article class="project" data-category="systems">
+          <a class="project-link" href="projects/recovery.html">
+            <div class="project-image"><img src="assets/work-recovery.webp" width="1200" height="800" loading="lazy" alt=""></div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Systems engineering</span><span>UC Pavement Research Center</span></p>
+              <h3>Windows backup &amp; recovery lab</h3>
+              <p>Built offline backup tooling, verified synthetic data recovery across three interruptions, and drafted drive-recovery procedures.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+        <article class="project" data-category="software systems">
+          <a class="project-link" href="projects/pavement-data.html">
+            <div class="project-image"><img src="assets/work-pavement.webp" width="1200" height="800" loading="lazy" alt=""></div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Research software</span><span>UC Pavement Research Center</span></p>
+              <h3>Pavement fatigue analysis</h3>
+              <p>Aligned and averaged three displacement channels across tests with up to 30,000 cycles sampled at 1 kHz.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+        <article class="project" data-category="software">
+          <a class="project-link" href="projects/labops.html">
+            <div class="project-image"><img src="assets/work-labops.webp" width="1200" height="800" loading="lazy" alt=""></div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Full-stack development</span><span>UC Pavement Research Center</span></p>
+              <h3>LabOps service portal</h3>
+              <p>Built a service portal for reporting equipment issues, assigning work, and recording repairs.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+        <article class="project" data-category="software systems">
+          <a class="project-link" href="projects/equipment-inventory.html">
+            <div class="project-image"><img src="assets/work-inventory.webp" width="1200" height="800" loading="lazy" alt=""></div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Lab software &amp; data</span><span>UC Pavement Research Center</span></p>
+              <h3>Equipment inventory &amp; calibration</h3>
+              <p>Built an inventory with maintenance schedules, searchable calibration certificates, and a local SQLite archive.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+        <article class="project" data-category="hardware">
+          <a class="project-link" href="projects/moisture-flow.html">
+            <div class="project-image"><img src="assets/work-moisture-sensor.webp" width="1200" height="800" loading="lazy" alt=""></div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Mechanical design</span><span>UC Pavement Research Center</span></p>
+              <h3>Moisture-flow research apparatus</h3>
+              <p>Modeled a five-column test apparatus and produced a 29-sheet drawing package in Autodesk Fusion.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+        <article class="project" data-category="hardware">
+          <a class="project-link" href="projects/concrete-fixture.html">
+            <div class="project-image"><img src="assets/work-fixture.webp" width="1200" height="800" loading="lazy" alt=""></div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Fixture design</span><span>UC Pavement Research Center</span></p>
+              <h3>Concrete panel testing fixture</h3>
+              <p>Designed a fixture for 500 mm concrete panels that integrates with an MTS load frame and uses three sensors to measure deflection.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+        <article class="project" data-category="hardware">
+          <a class="project-link" href="projects/test-track.html">
+            <div class="project-image"><img src="assets/work-track.webp" width="1200" height="800" loading="lazy" alt=""></div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Civil CAD</span><span>UC Pavement Research Center</span></p>
+              <h3>Pavement test track drawings</h3>
+              <p>Developed AutoCAD plans, sections, and drainage details for a pavement research test track.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+        <article class="project" data-category="hardware">
+          <a class="project-link" href="projects/aircraft.html">
+            <div class="project-image"><img src="assets/work-aircraft.webp" width="1440" height="960" loading="lazy" alt=""></div>
+            <div class="project-copy">
+              <p class="project-kicker"><span>Embedded instrumentation</span><span>Advanced Modeling Aeronautics Team</span></p>
+              <h3>Airborne instrumentation</h3>
+              <p>Integrated environmental sensors and GPS on RC aircraft and developed embedded flight-data logging.</p>
+              <span class="project-cta">Read case study</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section samples-section" id="work-samples" aria-labelledby="samples-title">
+      <div class="section-heading library-heading">
+        <h2 id="samples-title">Work samples</h2>
+      </div>
+      <div class="samples-grid">
+        <a class="library-link sample-link" href="projects/pavement-data.html#signal-explorer">
+          <p class="project-type">Interactive chart</p>
+          <h3>Compare signal alignment</h3>
+          <p>Switch between raw and aligned traces from three synthetic displacement sensors. See how timing changes the mean and download the sample data.</p>
+        </a>
+        <a class="library-link sample-link" href="projects/hvs.html#acquisition-path">
+          <p class="project-type">Instrumentation workflow</p>
+          <h3>Trace an HVS measurement</h3>
+          <p>Follow a reading from the instrument to the Windows application and see what I checked at each stage.</p>
+        </a>
+      </div>
+      <h3 class="samples-subheading">Public code on GitHub</h3>
+      <ul class="library-grid">
+        <li><a class="library-link" href="https://github.com/Samyak-27/Paint-in-terminal"><p class="project-type">C</p><h4>Terminal Paint</h4><p>Draw lines on a resizable character canvas and save or reload drawings.</p></a></li>
+        <li><a class="library-link" href="https://github.com/Samyak-27/ConnectN"><p class="project-type">C</p><h4>Connect N</h4><p>Play a terminal board game with configurable dimensions and win length.</p></a></li>
+        <li><a class="library-link" href="https://github.com/Samyak-27/Matrix-Determinant"><p class="project-type">C</p><h4>Matrix Determinant</h4><p>Read a matrix from a text file and calculate its determinant with recursive cofactor expansion.</p></a></li>
+      </ul>
+    </section>
+
+    <section class="wrap section library-section" id="library" aria-labelledby="library-title">
+      <div class="section-heading library-heading">
+        <h2 id="library-title">Project library</h2>
+      </div>
+      <ul class="library-grid">
+        <li><a class="library-link" href="projects/workstation-migration.html"><p class="project-type">Research computing</p><h3>Research workstation data migration</h3><p>Transferred 164,000+ files from a lab backup using PowerShell and Robocopy.</p></a></li>
+        <li><a class="library-link" href="projects/it-inventory.html"><p class="project-type">Lab software</p><h3>IT inventory and Sheets sync</h3><p>Connected an eight-tab inventory workbook to a web interface with search and saved edits.</p></a></li>
+        <li><a class="library-link" href="projects/purchasing-analytics.html"><p class="project-type">Data automation</p><h3>Purchasing reports automation</h3><p>Generated monthly spending, recurring purchase, and task-order reports with Python.</p></a></li>
+        <li><a class="library-link" href="projects/shear-fixture.html"><p class="project-type">Manufacturing QA</p><h3>Shear fixture manufacturing review</h3><p>Checked machined parts against CAD and secured the supplier’s agreement to remake two base plates.</p></a></li>
+        <li><a class="library-link" href="projects/baja-sae.html"><p class="project-type">Engineering leadership</p><h3>Baja SAE engineering leadership</h3><p>Coordinated design validation, manufacturing, and subsystem integration for an off-road vehicle.</p></a></li>
+        <li><a class="library-link" href="projects/single-cycle-cpu.html"><p class="project-type">Computer architecture</p><h3>16-bit single-cycle CPU</h3><p>Built and tested a processor with arithmetic, branching, and memory instructions in Logisim Evolution.</p></a></li>
+        <li><a class="library-link" href="projects/dns-resolver.html"><p class="project-type">Networking</p><h3>Iterative DNS resolver</h3><p>Used Python sockets and binary packet parsing to follow DNS referrals and resolve records.</p></a></li>
+        <li><a class="library-link" href="projects/reliable-udp.html"><p class="project-type">Networking</p><h3>Reliable data transfer over UDP</h3><p>Implemented sliding windows, acknowledgments, and retransmissions, then simulated congestion control.</p></a></li>
+        <li><a class="library-link" href="projects/dunk-water.html"><p class="project-type">Embedded systems</p><h3>Dunk water detection system</h3><p>Integrated float sensors, an Arduino controller, and a pump into a water-drainage prototype.</p></a></li>
+        <li><a class="library-link" href="projects/memory-hierarchy.html"><p class="project-type">Computer architecture</p><h3>Memory hierarchy simulation</h3><p>Compared translation lookaside buffer and page-walk cache configurations in gem5.</p></a></li>
+        <li><a class="library-link" href="projects/webgl-rendering.html"><p class="project-type">Graphics</p><h3>3D rendering engine</h3><p>Built a WebGL2 scene graph, OBJ importer, interactive camera, and per-fragment Phong lighting.</p></a></li>
+        <li><a class="library-link" href="projects/hvs-control-diagnostics.html"><p class="project-type">HVS troubleshooting</p><h3>HVS control software diagnostics</h3><p>Traced startup and communication faults through Windows processes, acquisition settings, and controller configuration.</p></a></li>
+        <li><a class="library-link" href="projects/hvs-drive-procedures.html"><p class="project-type">HVS recovery planning</p><h3>HVS drive recovery procedures</h3><p>Drafted procedures for identifying drives, recovering data, and checking results before review.</p></a></li>
+        <li><a class="library-link" href="projects/lab-instrumentation.html"><p class="project-type">Lab instrumentation</p><h3>Lab instrumentation and test equipment</h3><p>Supported load frames and research fixtures and checked signals from a USB-connected transducer.</p></a></li>
+        <li><a class="library-link" href="projects/prototype-fabrication.html"><p class="project-type">Additive manufacturing</p><h3>Sensor fixture prototyping</h3><p>Iterated print layouts and supports across PETG sensor holders and prepared resin trials.</p></a></li>
+        <li><a class="library-link" href="projects/lab-hosting.html"><p class="project-type">Systems deployment</p><h3>Local hosting for lab software</h3><p>Moved lab services to a Windows host and checked that access returned after restarts and a reboot.</p></a></li>
+        <li><a class="library-link" href="projects/architecture-teaching.html"><p class="project-type">Teaching</p><h3>Teaching computer architecture</h3><p>Helped students debug C and assembly and understand how instructions run through a processor.</p></a></li>
+      </ul>
+    </section>
+
+    <section class="experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap section experience-layout">
+        <div class="section-heading column-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Research, teaching, and leadership</h2>
+          <a class="text-link" href="assets/Samyak-Shirbhate-Resume.pdf" download>Download résumé</a>
+        </div>
+        <ol class="experience-list">
+          <li><p class="date">Oct 2025 – Present</p><h3>Lead Technician</h3><p class="org">UC Pavement Research Center</p><p>Support Windows and NI data acquisition systems for two Heavy Vehicle Simulators. Develop research software, troubleshoot lab instrumentation, and coordinate equipment upgrades for pavement testing.</p></li>
+          <li><p class="date">Sep 2024 – Present</p><h3>Technical Director</h3><p class="org">Davis Model United Nations</p><p>Manage the conference web platform, authentication, and deployments and support live operations during the event.</p></li>
+          <li><p class="date">Jan 2024 – Apr 2026</p><h3>Teaching Assistant</h3><p class="org">UC Davis Computer Science Department</p><p>Taught C and assembly debugging, memory allocation, and processor architecture in courses serving about 300 students per quarter.</p></li>
+          <li><p class="date">Oct 2023 – Oct 2025</p><h3>Instrumentation Lead</h3><p class="org">Advanced Modeling Aeronautics Team</p><p>Led sensor integration, calibration, and flight-data analysis for RC aircraft.</p></li>
+          <li><p class="date">Dec 2023 – Jun 2025</p><h3>Vice President</h3><p class="org">Baja SAE at UC Davis</p><p>Coordinated mechanical design, machining, and subsystem integration for an off-road competition vehicle.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="wrap section about-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading column-heading">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">From sensors to software</h2>
+      </div>
+      <div class="about-detail">
+        <p>I’m a computer science and engineering student at UC Davis and a Lead Technician at the UC Pavement Research Center. My work spans the full path from setting up an instrument to writing the software that makes sense of what it measures.</p>
+        <p>I’ve also worked on the infrastructure around experiments, including equipment service tools, calibration records, and recovery procedures that help research teams keep their systems running.</p>
+        <div class="education">
+          <p class="eyebrow">Education</p>
+          <h3>University of California, Davis</h3>
+          <p>B.S. in Computer Science &amp; Engineering <span>·</span> Expected 2027</p>
+        </div>
+      </div>
+      <div class="skills">
+        <div><h3>Software</h3><p>Python, C/C++, TypeScript, React, Dash, SQL, SQLite</p></div>
+        <div><h3>Systems</h3><p>Linux, Windows, PowerShell, Git, Docker, TCP/IP</p></div>
+        <div><h3>Instrumentation &amp; fabrication</h3><p>NI cDAQ, LVDTs, Autodesk Fusion, AutoCAD, SolidWorks, 3D printing</p></div>
+      </div>
+    </section>
+
+    <section class="wrap contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s talk.</h2>
+          <a class="contact-email" href="mailto:sshirbhate@ucdavis.edu">sshirbhate@ucdavis.edu</a>
+        </div>
+        <div class="contact-links">
+          <a class="button secondary" href="https://www.linkedin.com/in/samyak-shirbhate-7318a52a2">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/Samyak-27">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Samyak Shirbhate</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>

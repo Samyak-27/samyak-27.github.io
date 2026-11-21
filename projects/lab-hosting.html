@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Windows hosting, PowerShell startup and status tools, and SQLite archive recovery for UC Pavement Research Center software.">
+  <title>Local hosting for lab software | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article class="case-compact">
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#library">All projects</a>
+        <p class="eyebrow">Software infrastructure</p>
+        <h1>Local hosting for lab software</h1>
+        <p>I moved lab software and its document archive to a Windows OptiPlex and verified that researchers could reach the database and PDFs after the host rebooted.</p>
+      </header>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Organization</dt>
+            <dd>UC Pavement Research Center</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Host and access</dt>
+            <dd>Windows OptiPlex, Caddy, Cloudflare Tunnel, OpenSSH</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Operations</dt>
+            <dd>PowerShell, SQLite, SQL and CSV exports</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>Moving the services to Windows</h2>
+            <p>I moved the lab application services to an OptiPlex. I configured Caddy and Cloudflare Tunnel for application access, set up OpenSSH administration, and used PowerShell to automate startup and make service status and logs available during troubleshooting.</p>
+          </section>
+          <section class="case-section">
+            <h2>Making the archive recoverable</h2>
+            <p>I organized local equipment and document records in SQLite and prepared SQL and CSV exports. I checked backup restoration as well as day-to-day access, so I could verify that the archive was recoverable if the host needed to be rebuilt.</p>
+          </section>
+          <section class="case-section">
+            <h2>Verifying access after a reboot</h2>
+            <p>I tested database and PDF access after restarting the services, then repeated the checks after a full PC reboot. The second test verified that Windows brought the services back automatically.</p>
+          </section>
+          <section class="case-section">
+            <h2>Providing a fallback for local AI</h2>
+            <p>I connected a local Ollama service to LabOps through an authenticated proxy. The model could take time to respond while warming up on CPU hardware, so I retained a parser fallback for request lookups and draft creation.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#library">All projects</a>
+      <a href="architecture-teaching.html" rel="next"><small>Next project</small> Teaching computer architecture</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

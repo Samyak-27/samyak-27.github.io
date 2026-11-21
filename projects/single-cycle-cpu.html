@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A processor designed and simulated in Logisim Evolution, from the instruction set and control logic to the datapath and memory.">
+  <title>16-bit single-cycle CPU | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article class="case-compact">
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#library">All projects</a>
+        <p class="eyebrow">Computer architecture</p>
+        <h1>16-bit single-cycle CPU</h1>
+        <p>A processor designed and simulated in Logisim Evolution, from the instruction set and control logic to the datapath and memory.</p>
+      </header>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Architecture</dt>
+            <dd>16-bit single-cycle processor</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Tool</dt>
+            <dd>Logisim Evolution</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Instruction groups</dt>
+            <dd>Arithmetic, branching, and memory operations</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>Designing the instruction set</h2>
+            <p>I defined an instruction set that supported arithmetic, branches, and memory operations. Each instruction needed control signals that selected the right operands, routed the data through the appropriate hardware, and updated processor state within a single cycle.</p>
+          </section>
+          <section class="case-section">
+            <h2>Building the datapath</h2>
+            <p>I assembled the arithmetic logic unit, register file, control unit, and memory modules in Logisim Evolution. The datapath connected those modules so the same processor could calculate a result, update the instruction address for a branch, or move data between registers and memory.</p>
+          </section>
+          <section class="case-section">
+            <h2>Checking instruction execution</h2>
+            <p>I used assembly-level simulation to check the behavior of arithmetic, branching, and memory instructions. I followed changes in the simulated processor state to verify how those instructions exercised the datapath and control logic.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#library">All projects</a>
+      <a href="dns-resolver.html" rel="next"><small>Next project</small> Iterative DNS resolver</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

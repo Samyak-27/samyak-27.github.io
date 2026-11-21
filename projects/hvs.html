@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Restoring research computing and data acquisition configurations for two Heavy Vehicle Simulators at the UC Pavement Research Center.">
+  <title>Heavy Vehicle Simulator research systems | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article>
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#work">All projects</a>
+        <p class="eyebrow">Research instrumentation</p>
+        <h1>Heavy Vehicle Simulator research systems</h1>
+        <p>I restored and verified research computing and data acquisition configurations that support two Heavy Vehicle Simulators at the UC Pavement Research Center.</p>
+        <a class="text-link case-jump" href="#acquisition-path">Explore the measurement path</a>
+      </header>
+      <figure class="case-visual wrap">
+        <img src="../assets/work-hvs.webp" alt="The test wheel and laser profiler on a Dynatest Mark VI Heavy Vehicle Simulator" width="1185" height="890" fetchpriority="high" decoding="async">
+        <figcaption>Reference photo of the Virginia HVS wheel carriage. <a href="https://doi.org/10.3390/ma16247611">Tong et al. (2023), Fig. 1b</a>, cropped, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+      </figure>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Organization</dt>
+            <dd>UC Pavement Research Center</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Research scope</dt>
+            <dd>Two Heavy Vehicle Simulators</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Tools</dt>
+            <dd>Windows, NI CompactDAQ, NI MAX, PowerShell</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>How the simulator supports pavement research</h2>
+            <p>A Heavy Vehicle Simulator applies repeated, controlled wheel loads to a full-scale pavement section. That accelerates the loading researchers need to study how pavements respond to heavy traffic. The research workstations connect legacy software and sensor instrumentation so the team can collect measurements during those tests.</p>
+            <div class="case-links">
+              <a href="https://ucprc.ucdavis.edu/pdf/HVS%20Facts%20at%20a%20glance.pdf">Read UCPRC’s Heavy Vehicle Simulator overview</a>
+            </div>
+            <figure class="case-inline-figure">
+              <img src="../assets/work-hvs-overview.webp" alt="Side view of the long Dynatest pavement-loading machine and its covered test lane" width="1440" height="581" loading="lazy" decoding="async">
+              <figcaption>Reference photo of the full Virginia HVS. <a href="https://doi.org/10.3390/ma16247611">Tong et al. (2023), Fig. 1a</a>, cropped, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+            </figure>
+          </section>
+          <section class="case-section">
+            <h2>Restoring the acquisition environment</h2>
+            <p>I recovered Windows and NI CompactDAQ configurations supporting two simulators. On the Windows side, I diagnosed services and NI Configuration Manager issues that affected acquisition. On the instrument side, I restored NI MAX settings and cDAQ communication, then checked that sensors mapped to the intended acquisition channels.</p>
+            <p>I verified that the restored research applications and instrumentation could exchange data for continued testing.</p>
+          </section>
+          <section class="case-section">
+            <h2>Diagnosing control and communication faults</h2>
+            <p>I used PowerShell process inspection, logs, and configuration comparisons to investigate legacy control software. That work surfaced overlapping startup processes and mismatched machine parameters. I also tested USB and serial instrument connectivity independently to narrow down where communication was breaking.</p>
+          </section>
+          <section class="case-section acquisition-section" id="acquisition-path" aria-labelledby="acquisition-title">
+            <h2 id="acquisition-title">From sensor to test record</h2>
+            <p>Open each stage to see what I checked along the measurement path.</p>
+            <ol class="acquisition-steps">
+              <li><details open><summary>Instrument and connection</summary><p>I used independent USB and serial checks to see whether the instrument could communicate before testing it through the legacy application.</p></details></li>
+              <li><details><summary>Data acquisition hardware</summary><p>I restored NI CompactDAQ communication and investigated Windows and NI Configuration Manager services that affected acquisition.</p></details></li>
+              <li><details><summary>Channel configuration</summary><p>I restored NI MAX settings and checked that sensors mapped to the intended acquisition channels.</p></details></li>
+              <li><details><summary>Windows research application</summary><p>I verified that the restored software could exchange data with the instrumentation. In a separate diagnostic effort, I compared startup processes and configuration parameters to investigate control-software faults.</p></details></li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </article>
+    <section class="wrap case-related" aria-labelledby="hvs-related-title">
+      <h2 id="hvs-related-title">Related research systems</h2>
+      <ul class="library-grid">
+        <li><a class="library-link" href="hvs-control-diagnostics.html"><h3>HVS control software diagnostics</h3><p>Windows processes, machine parameters, and separate instrument checks.</p></a></li>
+        <li><a class="library-link" href="hvs-drive-procedures.html"><h3>HVS drive recovery procedures</h3><p>Draft procedures for drive identification, verification, and review.</p></a></li>
+        <li><a class="library-link" href="recovery.html"><h3>Windows backup &amp; recovery lab</h3><p>Offline backup tooling, drive-recovery procedures, and synthetic data verification.</p></a></li>
+      </ul>
+    </section>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#work">All projects</a>
+      <a href="recovery.html" rel="next"><small>Next project</small> Windows backup &amp; recovery lab</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

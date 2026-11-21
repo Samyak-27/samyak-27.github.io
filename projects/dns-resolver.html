@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Python resolver that builds binary DNS queries, reads compressed response names, and follows referrals to an authoritative server.">
+  <title>Iterative DNS resolver | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article class="case-compact">
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#library">All projects</a>
+        <p class="eyebrow">Networking</p>
+        <h1>Iterative DNS resolver</h1>
+        <p>A Python resolver that builds binary DNS queries, reads compressed response names, and follows referrals to an authoritative server.</p>
+      </header>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Tools</dt>
+            <dd>Python sockets and binary parsing</dd>
+          </div>
+          <div class="case-fact">
+            <dt>DNS record types</dt>
+            <dd>A, AAAA, NS, and CNAME</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Resolution path</dt>
+            <dd>Root, top-level domain, and authoritative servers</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>Reading DNS messages</h2>
+            <p>I built queries and parsed binary replies over UDP using Python sockets. I handled IPv4 and IPv6 address records, nameserver records, and canonical names. The parser decoded compressed names, where a pointer in one record refers to bytes elsewhere in the message.</p>
+          </section>
+          <section class="case-section">
+            <h2>Following referrals</h2>
+            <p>The resolver started at a root server and followed referrals through a top-level domain server to an authoritative server. It used additional address records supplied with a referral when available and could look up the nameserver address when needed.</p>
+          </section>
+          <section class="case-section">
+            <h2>Tracing a complete lookup</h2>
+            <p>I verified a resolution trace from a root server through the .org servers to an authoritative response that returned an IPv4 address. I then used the resolved address to make an HTTP request and tracked round-trip times during the run.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#library">All projects</a>
+      <a href="reliable-udp.html" rel="next"><small>Next project</small> Reliable data transfer over UDP</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

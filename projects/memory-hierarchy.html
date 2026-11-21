@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A gem5 study comparing how x86 memory hierarchy configurations handle virtual address translation across workloads.">
+  <title>Memory hierarchy simulation | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article class="case-compact">
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#library">All projects</a>
+        <p class="eyebrow">Computer architecture</p>
+        <h1>Memory hierarchy simulation</h1>
+        <p>I used gem5 to compare translation lookaside buffer sizes and page-walk cache configurations in simulated x86 workloads.</p>
+      </header>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Simulator</dt>
+            <dd>gem5 standard library</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Workload modes</dt>
+            <dd>x86 full-system and syscall emulation</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Study variables</dt>
+            <dd>TLB size, page-walk cache configuration</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>What the simulation varied</h2>
+            <p>A translation lookaside buffer (TLB) caches virtual-to-physical address translations. When a translation is missing, the processor can walk the page tables to retrieve it. I varied the TLB size and page-walk cache configuration to study caching at both stages.</p>
+          </section>
+          <section class="case-section">
+            <h2>Configuring the workloads</h2>
+            <p>I used the gem5 standard library to set up x86 simulations in full-system and syscall-emulation modes. Full-system mode models a guest operating system, while syscall emulation runs a user-space workload with its system calls handled by the simulator.</p>
+          </section>
+          <section class="case-section">
+            <h2>Comparing configurations</h2>
+            <p>I profiled workloads across the simulation configurations to compare how the memory hierarchy behaved under different translation and caching parameters.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#library">All projects</a>
+      <a href="webgl-rendering.html" rel="next"><small>Next project</small> 3D rendering engine</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

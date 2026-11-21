@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An Arduino-based system that detects standing water with float sensors and controls a drainage pump through a relay.">
+  <title>Dunk water detection system | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article class="case-compact">
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#library">All projects</a>
+        <p class="eyebrow">Embedded systems</p>
+        <h1>Dunk water detection system</h1>
+        <p>An Arduino-based controller that detects standing water and automatically activates a drainage pump.</p>
+      </header>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Controller</dt>
+            <dd>Arduino, C/C++</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Sensing and actuation</dt>
+            <dd>Float sensors, relay-controlled pump</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Mechanical design</dt>
+            <dd>CAD enclosure, integrated power distribution</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>Detecting standing water</h2>
+            <p>I used float sensors as inputs to the Arduino. The embedded C/C++ logic monitored those inputs and used their state to decide when to activate the pump.</p>
+          </section>
+          <section class="case-section">
+            <h2>Switching the pump</h2>
+            <p>A relay connected the controller’s output to the pump circuit. I integrated power distribution for the electronics and pump and accounted for voltage regulation and electrical noise from relay switching.</p>
+          </section>
+          <section class="case-section">
+            <h2>Designing the enclosure</h2>
+            <p>I used CAD to design a waterproof enclosure for the electronics. The enclosure and power integration were part of the same design, with outdoor exposure informing how I packaged the controller.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#library">All projects</a>
+      <a href="memory-hierarchy.html" rel="next"><small>Next project</small> Memory hierarchy simulation</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

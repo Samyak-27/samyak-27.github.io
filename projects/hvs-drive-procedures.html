@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I drafted drive-failure and disk-recovery procedures for Heavy Vehicle Simulator workstations, with drive checks, training steps, and supervisor review.">
+  <title>HVS drive recovery procedures | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article class="case-compact">
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#library">All projects</a>
+        <p class="eyebrow">Research systems documentation</p>
+        <h1>HVS drive recovery procedures</h1>
+        <p>I drafted drive-failure and disk-recovery procedures for Heavy Vehicle Simulator workstations, with drive checks, training steps, and supervisor review.</p>
+      </header>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Organization</dt>
+            <dd>UC Pavement Research Center</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Deliverables</dt>
+            <dd>Draft system-drive and GNU ddrescue procedures</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Review steps</dt>
+            <dd>Drive identification, training checks, supervisor signoff</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>Documenting two recovery paths</h2>
+            <p>I drafted one procedure for responding to a failed HVS system drive and a separate procedure for recovering readable data with GNU ddrescue. Each document identifies the intended recovery task and the checks that an authorized operator should complete before beginning.</p>
+          </section>
+          <section class="case-section">
+            <h2>Building in verification and review</h2>
+            <p>I included steps for checking the identity of the source and destination drives, along with a training checklist and a place for supervisor review and signoff. The checklists give a reviewer a way to walk through the decisions before an operator works on a research workstation.</p>
+          </section>
+          <section class="case-section">
+            <h2>Connecting the procedures to a test lab</h2>
+            <p>In a related portable Windows lab, I exercised post-recovery verification using synthetic data acquisition records. I used record sequences to check for gaps and SHA-256 checksums to verify file integrity.</p>
+            <div class="case-links">
+              <a href="recovery.html">Windows backup and recovery lab</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#library">All projects</a>
+      <a href="lab-instrumentation.html" rel="next"><small>Next project</small> Lab instrumentation and test equipment</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

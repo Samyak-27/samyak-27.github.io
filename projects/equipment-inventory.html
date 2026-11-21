@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A searchable lab equipment inventory with maintenance schedules, calibration certificate retrieval, and a local SQLite document archive.">
+  <title>Equipment inventory &amp; calibration | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article>
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#work">All projects</a>
+        <p class="eyebrow">Software systems</p>
+        <h1>Equipment inventory &amp; calibration</h1>
+        <p>A searchable inventory that connects lab equipment to maintenance schedules, calibration certificates, and the records staff need to plan service.</p>
+      </header>
+      <figure class="case-visual wrap">
+        <img src="../assets/work-inventory.webp" alt="" width="1200" height="800" fetchpriority="high" decoding="async">
+        <figcaption>Project illustration</figcaption>
+      </figure>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Organization</dt>
+            <dd>UC Pavement Research Center</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Data</dt>
+            <dd>Equipment records, maintenance tasks, calibration PDFs</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Infrastructure</dt>
+            <dd>SQLite archive on Windows</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>Matching certificates to equipment</h2>
+            <p>An inventory entry had to lead to the certificate for that specific instrument. I used serial numbers, asset tags, and source documents to link records. I kept ambiguous matches available for review and tracked missing calibration dates as gaps in the record.</p>
+          </section>
+          <section class="case-section">
+            <h2>Supporting maintenance workflows</h2>
+            <p>I built search, grouped filters, room-based views, and certificate downloads. I added bulk maintenance updates and task completion tracking so staff could work through a calibration service list, then export selected records to CSV.</p>
+          </section>
+          <section class="case-section">
+            <h2>Keeping records available</h2>
+            <p>I organized the equipment data and document archive in SQLite on a Windows host. I configured automatic startup, checked that the backup could be restored, and verified database and PDF access after a reboot.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#work">All projects</a>
+      <a href="moisture-flow.html" rel="next"><small>Next project</small> Moisture-flow research apparatus</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

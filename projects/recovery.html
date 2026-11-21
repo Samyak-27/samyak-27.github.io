@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A portable Windows backup and recovery lab that verified synthetic data acquisition records across three simulated interruptions.">
+  <title>Windows backup &amp; recovery lab | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article>
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#work">All projects</a>
+        <p class="eyebrow">Systems engineering</p>
+        <h1>Windows backup &amp; recovery lab</h1>
+        <p>An offline backup toolkit and a portable Windows test environment for checking how recorded data survives interruptions.</p>
+      </header>
+      <figure class="case-visual wrap">
+        <img src="../assets/work-recovery.webp" alt="Illustration of research computing hardware and a data acquisition chassis" width="1200" height="800" fetchpriority="high" decoding="async">
+        <figcaption>Project illustration</figcaption>
+      </figure>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Organization</dt>
+            <dd>UC Pavement Research Center</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Validation</dt>
+            <dd>Three synthetic interruption tests</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Tools</dt>
+            <dd>Windows 11, UTM, PowerShell</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>Building a portable test environment</h2>
+            <p>I configured a Windows 11 virtual machine in UTM with separate system and data disks. I also built an offline backup toolkit with disk inventory, destination-drive checks, and logs so an operator could verify which drive was being backed up and where the copy would go.</p>
+          </section>
+          <section class="case-section">
+            <h2>Checking the recovered data</h2>
+            <p>I used a synthetic data acquisition program to write sequentially numbered test records, then interrupted recording and checked the recovered files. All three runs passed the sequence checks for missing records and SHA-256 verification for file integrity.</p>
+          </section>
+          <section class="case-section">
+            <h2>Documenting the procedure</h2>
+            <p>I drafted separate procedures for system-drive recovery and GNU ddrescue, including drive-identification checks, training checklists, and supervisor review. The recovery results above come from the virtual test environment and its synthetic records.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#work">All projects</a>
+      <a href="pavement-data.html" rel="next"><small>Next project</small> Pavement fatigue analysis</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

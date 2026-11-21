@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Python and Dash workflow for turning high-frequency pavement test recordings into aligned, cycle-level data that researchers can inspect and compare.">
+  <title>Pavement fatigue analysis | Samyak Shirbhate</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+  <script src="../signal-demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#library">Project library</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <article>
+      <header class="case-hero wrap">
+        <a class="case-back" href="../index.html#work">All projects</a>
+        <p class="eyebrow">Research software</p>
+        <h1>Pavement fatigue analysis</h1>
+        <p>A Python and Dash workflow for turning high-frequency pavement test recordings into aligned, cycle-level data that researchers can inspect and compare.</p>
+        <a class="text-link case-jump" href="#signal-explorer">Try the signal explorer</a>
+      </header>
+      <figure class="case-visual wrap">
+        <img src="../assets/work-pavement.webp" alt="Illustration of three synthetic displacement traces, one for each sensor" width="1200" height="800" fetchpriority="high" decoding="async">
+        <figcaption>Project illustration</figcaption>
+      </figure>
+      <div class="case-body wrap">
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Organization</dt>
+            <dd>UC Pavement Research Center</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Test scale</dt>
+            <dd>Up to 30,000 cycles at 1 kHz</dd>
+          </div>
+          <div class="case-fact">
+            <dt>Tools</dt>
+            <dd>Python, Dash, LVDTs</dd>
+          </div>
+        </dl>
+        <div class="case-copy">
+          <section class="case-section">
+            <h2>The challenge</h2>
+            <p>A pavement fatigue test can record tens of thousands of cycles. Load, actuator, displacement, and temperature readings need to be aligned before researchers can compare how a specimen responds over repeated loading.</p>
+          </section>
+          <section class="case-section">
+            <h2>What I built</h2>
+            <p>I built a Python workflow to align signals, process each cycle, and average displacement measurements from three linear variable differential transformers (LVDTs). I paired it with a Dash interface for uploading multiple files, running the workflow, and visualizing the outputs.</p>
+          </section>
+          <section class="case-section">
+            <h2>What the workflow delivers</h2>
+            <p>The same processing steps can run across files sampled at 1 kHz, with up to 30,000 test cycles per dataset. The tool produces structured data for post-test analysis and removes the need to align signals and average the three displacement channels by hand.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <section class="wrap signal-section" id="signal-explorer" aria-labelledby="signal-title">
+      <div class="section-heading signal-heading">
+        <h2 id="signal-title">Compare signal alignment</h2>
+        <p>Three synthetic displacement sensors record the same loading cycles at different times. Align their peaks to see how timing affects the mean trace.</p>
+      </div>
+      <noscript><p>The sample chart above shows three example traces. Enable JavaScript to compare the raw and aligned traces.</p></noscript>
+      <div class="signal-demo" data-signal-demo hidden>
+        <div class="signal-options">
+          <fieldset class="signal-modes">
+            <legend>Trace alignment</legend>
+            <div class="signal-radios">
+              <label><input type="radio" name="signal-mode" value="raw" checked><span>Raw timing</span></label>
+              <label><input type="radio" name="signal-mode" value="aligned"><span>Aligned peaks</span></label>
+            </div>
+          </fieldset>
+          <label class="signal-toggle"><input type="checkbox" data-signal-mean checked> Show mean trace</label>
+        </div>
+        <canvas class="signal-canvas" role="img" aria-label="Three synthetic sensor traces and their mean across four seconds"></canvas>
+        <ul class="signal-legend" aria-label="Trace legend">
+          <li><span class="trace-key trace-one" aria-hidden="true"></span> LVDT 1</li>
+          <li><span class="trace-key trace-two" aria-hidden="true"></span> LVDT 2</li>
+          <li><span class="trace-key trace-three" aria-hidden="true"></span> LVDT 3</li>
+          <li data-mean-key><span class="trace-key trace-mean" aria-hidden="true"></span> Mean</li>
+        </ul>
+        <div class="signal-results" role="status" aria-live="polite">
+          <dl><dt>Peak timing spread</dt><dd data-signal-spread></dd></dl>
+          <dl><dt>Peak of mean trace</dt><dd data-signal-peak></dd></dl>
+        </div>
+        <div class="signal-footer">
+          <p>Synthetic data sampled at 1 kHz. The demo shifts each trace using the first cycle’s peak as a shared reference.</p>
+          <button class="button secondary" type="button" data-signal-export>Download sample CSV</button>
+        </div>
+      </div>
+    </section>
+    <nav class="case-pager wrap" aria-label="More projects">
+      <a href="../index.html#work">All projects</a>
+      <a href="labops.html" rel="next"><small>Next project</small> LabOps service portal</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="../index.html" aria-label="Samyak Shirbhate home"><span class="wordmark">SS<span>.</span></span></a>
+      <p>Samyak Shirbhate</p>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
